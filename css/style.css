@@ -1,0 +1,338 @@
+.justifyright {
+		text-align: right;
+	}
+	.justifyleft {
+		text-align: left;
+	}
+	.justifycenter {
+		text-align: center;
+	}
+	.justifyfull {
+		text-align: justify;
+	}
+	
+	body,
+	html {
+		width: 100%;
+		height: 100%;
+	}
+	body {
+		background: #a7b6c8 url('img/bg.jpg') no-repeat bottom center fixed;
+		overflow-x: hidden;
+	}
+	body,
+	th,
+	td {
+		font-family: 'Roboto Slab', serif;
+		font-size: 14px;
+		color: #333;
+	}
+	body,
+	form,
+	object,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		margin: 0;
+		padding: 0;
+	}
+	img,
+	table {
+		border: none;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	table td {
+		padding: 0;
+	}
+	table th {
+		text-align: center!important;
+	}
+	a {
+		color: #333333;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+	input,
+	textarea {
+		margin: 0;
+	}
+	section,
+	header,
+	footer,
+	nav,
+	main {
+		display: block;
+	}
+	.clear {
+		clear: both;
+	}
+	.wrap {
+		width: 1196px;
+		margin: 0 auto;
+	}
+	.container {
+		width: 952px;
+		margin: 0 auto;
+	}
+	
+	
+	main {
+		background: url(img/site.png);
+	}
+	h1 {
+		text-align: center;
+		font-weight: normal;
+		font-size: 24px;
+		background: url('img/h1.png') no-repeat center;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+	p {
+		margin: 0 0 10px 0;
+	}
+	
+	.photos-right {
+		float: right;
+	}
+	.photos-right .item {
+		width: 232px;
+		height: 164px;
+		background: url('img/photo.png');
+		display: inline-block;
+		margin: 0 0 15px 15px;
+		line-height: 164px;
+		text-align: center;
+	}
+	.photos-right .item img {
+		vertical-align: middle;
+		width: 196px;
+		height: 126px;
+	}
+	
+	
+	#content p {
+		margin: 0 0 15px 0;
+	}
+	#content li {
+		list-style-type: disc;
+		margin: 0 0 7px 35px;
+	}
+	#content ol {
+		list-style-type: decimal;
+		margin: 0 0 7px 35px;
+	}
+	#content a {
+		color: #2856B2;
+		text-decoration: underline
+	}
+	#content a:hover {
+		text-decoration: none
+	}
+	#content table {}
+	#content table td {
+		border: 1px solid black;
+		padding: 6px 10px;
+	}
+	
+	
+	div#gallery  {
+		text-align: left;
+		padding: 20px;
+	}
+	a.multi-photos-item {
+		color: #243C68;
+		display: block;
+		float: left;
+		margin: 15px 0px 15px 43px;
+		text-decoration: none;
+	}
+	a.multi-photos-item:hover {
+		color: #FB4433;
+	}
+	a.multi-photos-item img {
+		border-radius: 5px;
+		border: 1px solid #A39D8D;
+		height: 180px;
+		width: 180px;
+	}
+	a.multi-photos-album-tpl {
+		color: #243C68;
+		display: block;
+		float: left;
+		height: 220px;
+		margin: 15px 0px 15px 43px;
+		text-decoration: none;
+		width: 255px;
+	}
+	a.multi-photos-album-tpl:hover {
+		color: #FB4433;
+	}
+	a.multi-photos-album-tpl img {
+		border-radius: 5px;
+		border: 1px solid #A39D8D;
+		height: 180px;
+		width: 255px;
+	}
+	
+	#ui-datepicker-div
+	{
+		border:2px solid #bbb;
+		background:#fff;
+		box-shadow:0 0 25px 0px rgba(0,0,0,0.6);
+		padding: 10px;
+	}
+	#ui-datepicker-div .ui-datepicker-header{margin-bottom:10px;}
+	#ui-datepicker-div .ui-datepicker-header>a.ui-datepicker-next
+	{
+		background: url('img/next.png') 0 0;
+		top:2px;right:2px;
+	}
+	#ui-datepicker-div .ui-datepicker-header>a.ui-datepicker-next:hover
+	{
+		background: url('img/next.png') 0px 24px;
+	}
+	#ui-datepicker-div .ui-datepicker-header>a.ui-datepicker-prev
+	{
+		background: url('img/prev.png') 0 0;
+		top:2px;left:2px;
+	}
+	#ui-datepicker-div .ui-datepicker-header>a.ui-datepicker-prev:hover
+	{
+		background: url('img/prev.png') 0px 24px;
+	}
+	#ui-datepicker-div .ui-datepicker-title>select
+	{
+		width:49%;
+		height: 30px;
+		text-indent: 5px;
+		border: 2px solid #bbb;
+		box-sizing: border-box;
+		font-family: "Open Sans";
+		color: #222;
+		size:8;
+	}
+	#ui-datepicker-div .ui-datepicker-title>select:first-child{margin-right:2%;}
+	#ui-datepicker-div .ui-datepicker-calendar{text-align:center;}
+
+	header {
+			height: 194px;
+			background: url(img/header.png);
+		}
+		header .left {
+			float: left;
+			padding-top: 76px;
+		}
+		header .left .logo span {
+			font-size: 22px;
+			color: #253d69;
+			margin: -5px 0 0 25px;
+			position: absolute;
+		}
+		header .left .buttons {
+			padding-top: 15px;
+		}
+		header .left .buttons a {
+			display: inline-block;
+			color: #fff;
+			text-decoration: none;
+			font-size: 14px;
+			height: 30px;
+			line-height: 30px;
+			padding: 0 13px;
+			background-image: -webkit-linear-gradient(top, #BF383C 0%, #9D2E31 100%);
+			background-image: -moz-linear-gradient(top, #BF383C 0%, #9D2E31 100%);
+			background-image: -ms-linear-gradient(top, #BF383C 0%, #9D2E31 100%);
+			background-image: -o-linear-gradient(top, #BF383C 0%, #9D2E31 100%);
+			background-image: linear-gradient(top, #BF383C 0%, #9D2E31 100%);
+			border: 1px solid #DA4144;
+			border-bottom: 1px solid #7A2226;
+			border-radius: 32px;
+			box-shadow: #ededed 1px 1px 1px;
+			margin-right: 11px;
+			position: relative;
+			text-transform: uppercase;
+		}
+		
+		header .left .buttons a:hover {
+			text-decoration: underline;
+		}
+		header .right {
+			float: right;
+			padding: 68px 10px 0 0;
+		}
+		header .right .adress {
+			color: #2856AB;
+			font-size: 14px;
+			background: url(img/adress.png) no-repeat left center;
+			padding-left: 40px;
+			margin-bottom: 3px;
+			
+		}
+		header .right .phone {
+			background: url(img/phone.png) no-repeat left center;
+			color: #2856AB;
+			font-size: 15px;
+			padding: 10px 0 10px 40px;
+		}
+		header .right .mail {
+			background: url(img/mail.png) no-repeat left center;
+			padding: 10px 0 10px 40px;
+		}
+		header .right .mail a {
+			color: #2856AB;
+			font-size: 14px;
+		}
+		header .main-logo {
+			padding-top: 45px;
+		}
+
+		.top-menu {
+			height: 57px;
+			background: url('img/top-menu.jpg') no-repeat center;
+			text-align: center;
+		}
+		.top-menu ul {
+			padding: 0;
+			margin: 0;
+			list-style: none;
+		}
+		.top-menu ul li {
+			display: inline-block;
+			height: 57px;
+			line-height: 57px;
+			margin: 0 25px;
+			position: relative;
+		}
+		.top-menu ul li:last-child:after {
+			display: none;
+		}
+		.top-menu ul li:after {
+			content: "";
+			display: block;
+			position: absolute;
+			right: -32px;
+			top: 0;
+			width: 8px;
+			height: 57px;
+			background: url('img/top-menu.png') no-repeat center;
+		}
+		.top-menu ul li:hover,
+		.top-menu ul li.active {
+			background: url('img/top-menu-hover.jpg');
+		}
+		.top-menu ul li:hover a,
+		.top-menu ul li.active a {
+			color: #bb884c;
+		}
+		.top-menu ul li a {
+			color: #4b3722;
+			text-transform: uppercase;
+			text-decoration: none;
+		}
