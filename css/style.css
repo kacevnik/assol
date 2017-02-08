@@ -223,7 +223,7 @@
 
 	header {
 			height: 194px;
-			background: url(img/header.png);
+			background: url(../img/header.png);
 		}
 		header .left {
 			float: left;
