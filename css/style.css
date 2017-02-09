@@ -92,7 +92,7 @@
 	
 	
 	main {
-		background: url(img/site.png);
+		background: url(../img/site.png);
 	}
 	h1 {
 		text-align: center;
@@ -305,13 +305,15 @@
 
 		.top-menu {
 			height: 57px;
-			background: url('img/top-menu.jpg') no-repeat center;
+			background: url('../img/top-menu.jpg') no-repeat center;
 			text-align: center;
+			padding-left: 18px;
 		}
 		.top-menu ul {
 			padding: 0;
 			margin: 0;
 			list-style: none;
+			margin-left: 155px;
 		}
 		.top-menu ul li {
 			display: inline-block;
@@ -331,11 +333,17 @@
 			top: 0;
 			width: 8px;
 			height: 57px;
-			background: url('img/top-menu.png') no-repeat center;
+			background: url('../img/top-menu.png') no-repeat center;
+		}
+		.top-menu ul li a{
+			padding-top: 18px;
+		}
+		.top-menu ul li a:hover{
+			background-color: transparent;
 		}
 		.top-menu ul li:hover,
 		.top-menu ul li.active {
-			background: url('img/top-menu-hover.jpg');
+			background: url('../img/top-menu-hover.jpg');
 		}
 		.top-menu ul li:hover a,
 		.top-menu ul li.active a {
