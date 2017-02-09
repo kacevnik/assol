@@ -1,4 +1,12 @@
-.justifyright {
+	@font-face {
+	    font-family: "Roboto Slab";
+	    src: url("../fonts/RobotoSlabRegular.eot");
+	    src: url("../fonts/RobotoSlabRegular.eot?#iefix")format("embedded-opentype"),
+	    url("../fonts/RobotoSlabRegular.woff") format("woff"),
+	    url("../fonts/RobotoSlabRegular.ttf") format("truetype");
+	}
+
+	.justifyright {
 		text-align: right;
 	}
 	.justifyleft {
@@ -78,7 +86,7 @@
 		margin: 0 auto;
 	}
 	.container {
-		width: 952px;
+		width: 980px;
 		margin: 0 auto;
 	}
 	
@@ -266,23 +274,25 @@
 		header .right {
 			float: right;
 			padding: 68px 10px 0 0;
+			width: 350px;
 		}
 		header .right .adress {
 			color: #2856AB;
 			font-size: 14px;
-			background: url(img/adress.png) no-repeat left center;
+			background: url(../img/adress.png) no-repeat left center;
 			padding-left: 40px;
-			margin-bottom: 3px;
+			margin-bottom: 7px;
+			padding-bottom: 5px
 			
 		}
 		header .right .phone {
-			background: url(img/phone.png) no-repeat left center;
+			background: url(../img/phone.png) no-repeat left center;
 			color: #2856AB;
 			font-size: 15px;
 			padding: 10px 0 10px 40px;
 		}
 		header .right .mail {
-			background: url(img/mail.png) no-repeat left center;
+			background: url(../img/mail.png) no-repeat left center;
 			padding: 10px 0 10px 40px;
 		}
 		header .right .mail a {

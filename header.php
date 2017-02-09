@@ -56,32 +56,30 @@
 					<script async src="https://www.gismeteo.ru/api/informer/getinformer/?hash=LU2r5h6JvuHHPR" type="text/javascript"></script>
 				<!-- Gismeteo informer END -->
 				<?php } ?>
-			</div>
-		</div>
 		
-		<div class="left">
-			<div class="logo">
-				<a href="/"><img src="img/logo1.png"></a>
-				<span>С нами<br>комфортно!</span>
+			<div class="left">
+				<div class="logo">
+					<a href="<?php bloginfo( 'wpurl' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/img/logo1.png"></a>
+					<span><?php echo $theme_options['kdv_slogan_header']; ?></span>
+				</div>
+				<div class="buttons">
+					<a href="zabronirovat-nomer" target='_blank' class="b1">Забронировать номер</a>
+					<a href="zadat-vopros" target='_blank' class="b2">Задать вопрос</a>
+				</div>
 			</div>
-			<div class="buttons">
-				<a href="zabronirovat-nomer" target='_blank' class="b1">Забронировать номер</a>
-				<a href="zadat-vopros" target='_blank' class="b2">Задать вопрос</a>
-			</div>
-		</div>
 		<div class="right">
 			<div class="adress">
-				Краснодарский край, Туапсинский район,<br>пос. Небуг, ул. Набережная, д. 7-Г
+				<?php echo $theme_options['kdv_adress_header']; ?>
 			</div>
 			<div class="phone">
-				+7 (918) 088-00-05
+				<?php echo $theme_options['kdv_phone_header']; ?>
 			</div>
 			<div class="mail">
-				<a href="mailto:oksana-nebug@mail.ru">oksana-nebug@mail.ru</a>
+				<a href="mailto:<?php echo $theme_options['kdv_email_header']; ?>"><?php echo $theme_options['kdv_email_header']; ?></a>
 			</div>
 		</div>
 		<div class="main-logo">
-			<a href="/"><img src="img/main-logo.png"></a>
+			<a href="<?php bloginfo( 'wpurl' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/img/main-logo.png"></a>
 		</div>
 		<div class="clear"></div>
 	</div>

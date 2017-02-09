@@ -38,16 +38,43 @@ function plugin_settings(){
 	add_settings_section( 'section_id', 'Основные настройки', '', 'primer_page' ); 
 
 	// параметры: $id, $title, $callback, $page, $section, $args
-	add_settings_field('primer_field1', 'Название опции', 'fill_primer_field1', 'primer_page', 'section_id' );
+	add_settings_field('kdv_slogan_header', 'Слоган в шапке сайта', 'fill_kdv_slogab_header', 'primer_page', 'section_id' );
+	add_settings_field('kdv_phone_header', 'Телефон в шапке сайта', 'fill_kdv_phone_header', 'primer_page', 'section_id' );
+	add_settings_field('kdv_email_header', 'E-mail в шапке сайта', 'fill_kdv_email_header', 'primer_page', 'section_id' );
+	add_settings_field('kdv_adress_header', 'Адрес в шапке сайта', 'fill_kdv_adress_header', 'primer_page', 'section_id' );
 	add_settings_field('kdv_informer', 'Включить информер погоды?', 'fill_option_informer', 'primer_page', 'section_id' );
 }
 
 ## Заполняем опцию 1
-function fill_primer_field1(){
+function fill_kdv_slogab_header(){
 	$val = get_option('option_name');
-	$val = $val['input'];
+	$val = $val['kdv_slogan_header'];
 	?>
-	<input type="text" name="option_name[input]" value="<?php echo esc_attr( $val ) ?>" />
+	<input type="text" name="option_name[kdv_slogan_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<?php
+}
+
+function fill_kdv_phone_header(){
+	$val = get_option('option_name');
+	$val = $val['kdv_phone_header'];
+	?>
+	<input type="text" name="option_name[kdv_phone_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<?php
+}
+
+function fill_kdv_email_header(){
+	$val = get_option('option_name');
+	$val = $val['kdv_email_header'];
+	?>
+	<input type="text" name="option_name[kdv_email_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<?php
+}
+
+function fill_kdv_adress_header(){
+	$val = get_option('option_name');
+	$val = $val['kdv_adress_header'];
+	?>
+	<textarea name="option_name[kdv_adress_header]" style="width: 400px; height: 150px;"><?php echo esc_attr( $val ) ?></textarea>
 	<?php
 }
 
@@ -64,8 +91,8 @@ function fill_option_informer(){
 function sanitize_callback( $options ){ 
 	// очищаем
 	foreach( $options as $name => & $val ){
-		if( $name == 'input' )
-			$val = strip_tags( $val );
+		//if( $name == 'kdv_slogan_header' )
+			//$val = strip_tags( $val );
 
 		if( $name == 'kdv_informer' )
 			$val = intval( $val );
