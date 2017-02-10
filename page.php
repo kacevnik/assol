@@ -6,7 +6,7 @@
  */
 get_header(); // подключаем header.php ?>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); // старт цикла ?>
-<div id='content' class="container">id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<div id='content' class="container <?php post_class(); ?>" id="post-<?php the_ID(); ?>">
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 						<h1><?php the_title(); // заголовок поста ?></h1>
 						<?php the_content(); // контент ?>
@@ -14,45 +14,6 @@ get_header(); // подключаем header.php ?>
 			</div>
 			<?php endwhile; // конец цикла ?>
 			</div>
-			<noindex>
-	<style>
-		.gallery {
-			height: 167px;
-			background: url('img/gallery.jpg') no-repeat center;
-		}
-		.gallery .gallery-container {
-			padding: 20px 60px;
-			position: relative;
-		}
-		.gallery .bx-pager {
-			display: none;
-		}
-		.gallery .bx-controls-direction a {
-			position: absolute;
-			display: block;
-			text-indent: -99999px;
-			width: 32px;
-			height: 32px;
-			top: 50%;
-			margin-top: -16px;
-		}
-		.gallery .bx-controls-direction a.bx-prev {
-			background: url('img/prev2.png') top;
-			left: 18px;
-		}
-		.gallery .bx-controls-direction a.bx-prev:hover {
-			background: url('img/prev2.png') bottom;
-		}
-		.gallery .bx-controls-direction a.bx-next {
-			background: url('img/next2.png') top;
-			right: 18px;
-		}
-		.gallery .bx-controls-direction a.bx-next:hover {
-			background: url('img/next2.png') bottom;
-		}
-	</style>
-</noindex>
-
 <div class="container">
 	<div class="gallery">
 		<div class="gallery-container">

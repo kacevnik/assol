@@ -85,26 +85,47 @@
 	</div>
 </header>
 		<main>
+			<nav class="top-menu" id="topnav">
+										<?php $args = array( 
+											'theme_location' => 'top',
+											'container'=> false,
+									  		'menu_id' => 'top-nav-ul', // id для ul
+									  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
+											'menu_class' => 'top-menu', // класс для ul, первые 2 обязательны
+									  		'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению субменю не раскрывать то передайте false		  		
+								  			);
+											wp_nav_menu($args); // выводим верхнее меню
+										?>
+			</nav>
 
-<nav class="top-menu" id="topnav">
-							<?php $args = array( 
-								'theme_location' => 'top',
-								'container'=> false,
-						  		'menu_id' => 'top-nav-ul', // id для ul
-						  		'items_wrap' => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
-								'menu_class' => 'top-menu', // класс для ul, первые 2 обязательны
-						  		'walker' => new bootstrap_menu(true) // верхнее меню выводится по разметке бутсрапа, см класс в functions.php, если по наведению субменю не раскрывать то передайте false		  		
-					  			);
-								wp_nav_menu($args); // выводим верхнее меню
-							?>
-</nav>
-
-<div class="slider">
-	<div class="slider-container">
-		<ul class="bxslider">
-			<li><img src="assets/images/slider/000111_cr.jpg"></li><li><img src="assets/images/slider/0002_cr.jpg"></li><li><img src="assets/images/slider/0003_cr.jpg"></li><li><img src="assets/images/slider/0004_cr.jpg"></li><li><img src="assets/images/slider/0005_cr.jpg"></li><li><img src="assets/images/slider/0006_cr.jpg"></li><li><img src="assets/images/slider/0007_cr.jpg"></li><li><img src="assets/images/slider/0008_cr.jpg"></li><li><img src="assets/images/slider/0009_cr.jpg"></li><li><img src="assets/images/slider/00091_cr.jpg"></li><li><img src="assets/images/slider/2s.jpg"></li><li><img src="assets/images/slider/3s.jpg"></li><li><img src="assets/images/slider/4s.jpg"></li><li><img src="assets/images/slider/5s.jpg"></li><li><img src="assets/images/slider/1s.jpg"></li><li><img src="assets/images/slider/12_cr.jpg"></li><li><img src="assets/images/slider/13_cr.jpg"></li><li><img src="assets/images/slider/14_cr.jpg"></li><li><img src="assets/images/slider/15_cr.jpg"></li><li><img src="assets/images/slider/16_cr.jpg"></li>
-		</ul>
-	</div>
-</div>
+			<div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel">
+			<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/slide1.png" alt="">
+					</div>
 
 
+					<div class="item">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/slide2.png" alt="">
+					</div>
+
+
+					<div class="item">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/slide3.png" alt="">
+					</div>
+
+
+					<div class="item">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/slide4.png" alt="">
+					</div>
+				</div>
+
+			<!-- Controls -->
+			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+
+			</a>
+			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+
+			</a>
+			</div>
