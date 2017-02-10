@@ -35,7 +35,7 @@ function plugin_settings(){
 	register_setting( 'option_group', 'option_name', 'sanitize_callback' );
 
 	// параметры: $id, $title, $callback, $page
-	add_settings_section( 'section_id', 'Основные настройки', '', 'primer_page' ); 
+	add_settings_section( 'section_id', 'Основные настройки', '', 'primer_page' );  
 
 	// параметры: $id, $title, $callback, $page, $section, $args
 	add_settings_field('kdv_slogan_header', 'Слоган в шапке сайта', 'fill_kdv_slogab_header', 'primer_page', 'section_id' );
@@ -43,6 +43,8 @@ function plugin_settings(){
 	add_settings_field('kdv_email_header', 'E-mail в шапке сайта', 'fill_kdv_email_header', 'primer_page', 'section_id' );
 	add_settings_field('kdv_adress_header', 'Адрес в шапке сайта', 'fill_kdv_adress_header', 'primer_page', 'section_id' );
 	add_settings_field('kdv_informer', 'Включить информер погоды?', 'fill_option_informer', 'primer_page', 'section_id' );
+	add_settings_field('kdv_copy_footer', 'Текст копирайта в футере', 'fill_kdv_copy_footer', 'primer_page', 'section_id' );
+	add_settings_field('kdv_footer_info', 'Дополнительные скрипты в футер', 'fill_kdv_footer_info', 'primer_page', 'section_id' );
 }
 
 ## Заполняем опцию 1
@@ -50,7 +52,7 @@ function fill_kdv_slogab_header(){
 	$val = get_option('option_name');
 	$val = $val['kdv_slogan_header'];
 	?>
-	<input type="text" name="option_name[kdv_slogan_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<input type="text" name="option_name[kdv_slogan_header]" style="width: 400px;" value="<?php echo esc_attr( $val ) ?>" />
 	<?php
 }
 
@@ -58,7 +60,7 @@ function fill_kdv_phone_header(){
 	$val = get_option('option_name');
 	$val = $val['kdv_phone_header'];
 	?>
-	<input type="text" name="option_name[kdv_phone_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<input type="text" name="option_name[kdv_phone_header]" style="width: 400px;" value="<?php echo esc_attr( $val ) ?>" />
 	<?php
 }
 
@@ -66,7 +68,15 @@ function fill_kdv_email_header(){
 	$val = get_option('option_name');
 	$val = $val['kdv_email_header'];
 	?>
-	<input type="text" name="option_name[kdv_email_header]" value="<?php echo esc_attr( $val ) ?>" />
+	<input type="text" name="option_name[kdv_email_header]" style="width: 400px;" value="<?php echo esc_attr( $val ) ?>" />
+	<?php
+}
+
+function fill_kdv_copy_footer(){
+	$val = get_option('option_name');
+	$val = $val['kdv_copy_footer'];
+	?>
+	<input type="text" name="option_name[kdv_copy_footer]" style="width: 400px;" value="<?php echo esc_attr( $val ) ?>" />
 	<?php
 }
 
@@ -84,6 +94,14 @@ function fill_option_informer(){
 	$val = $val['kdv_informer'];
 	?>
 	<label><input type="checkbox" name="option_name[kdv_informer]" value="1" <?php checked( 1, $val ) ?> /> Да</label>
+	<?php
+}
+
+function fill_kdv_footer_info(){
+	$val = get_option('option_name');
+	$val = $val['kdv_footer_info'];
+	?>
+	<textarea name="option_name[kdv_footer_info]" style="width: 400px; height: 150px;"><?php echo esc_attr( $val ) ?></textarea>
 	<?php
 }
 

@@ -19,47 +19,27 @@ get_header(); // подключаем header.php ?>
 		<div class="gallery-container">
 			<div class="slider2">
 				<div class="slide">
-	<a href="assets/images/karousel/22.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-22.d97.jpg">
+	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big1.png" rel="fancy" class="fancy">
+		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal1.png">
 	</a>
 </div><div class="slide">
-	<a href="assets/images/karousel/b1.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-b1.d97.jpg">
+	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big2.png"  rel="fancy" class="fancy">
+		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal2.png">
 	</a>
 </div><div class="slide">
-	<a href="assets/images/karousel/g2.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-g2.d97.jpg">
+	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big3.png" rel="fancy" class="fancy">
+		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal3.png">
 	</a>
 </div><div class="slide">
-	<a href="assets/images/karousel/b2.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-b2.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/v2.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-v2.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/g3.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-g3.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/b3.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-b3.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/g4.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-g4.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/b4.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-b4.d97.jpg">
-	</a>
-</div><div class="slide">
-	<a href="assets/images/karousel/g5.jpg" rel="fancy">
-		<img src="assets/cache/images/karousel/193x128-g5.d97.jpg">
+	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big4.png" rel="fancy" class="fancy">
+		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal4.png">
 	</a>
 </div>
-			</div>
+<div class="slide">
+	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big5.png" rel="fancy" class="fancy">
+		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal5.png">
+	</a>
+			</div> 
 		</div>
 	</div>
 </div>

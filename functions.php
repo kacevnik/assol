@@ -114,6 +114,8 @@ if (!function_exists('add_scripts')) { // если ф-я уже есть в до
 	    wp_deregister_script('jquery'); // выключаем стандартный jquery
 	    wp_enqueue_script('jquery','//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js','','',true); // добавляем свой
 	    wp_enqueue_script('bootstrap', get_template_directory_uri().'/js/bootstrap.min.js','','',true); // бутстрап
+	    wp_enqueue_script('bxslider', get_template_directory_uri().'/js/jquery.bxslider.min.js','','',true); // и скрипты шаблона
+	    wp_enqueue_script('fancy', get_template_directory_uri().'/js/source/jquery.fancybox.pack.js','','',true); // и скрипты шаблона
 	    wp_enqueue_script('main', get_template_directory_uri().'/js/main.js','','',true); // и скрипты шаблона
 	}
 }
@@ -125,6 +127,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	    wp_enqueue_style( 'bs', get_template_directory_uri().'/css/bootstrap.min.css' ); // бутстрап
 		wp_enqueue_style( 'main', get_template_directory_uri().'/style.css' ); // основные стили шаблона
 		wp_enqueue_style( 'style', get_template_directory_uri().'/css/style.css' ); // основные стили шаблона
+		wp_enqueue_style( 'fancy_style', get_template_directory_uri().'/js/source/jquery.fancybox.css' ); // основные стили шаблона
 		wp_enqueue_style( 'slider', get_template_directory_uri().'/css/slider.css' ); // основные стили слайдера
 	}
 }

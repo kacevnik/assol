@@ -2,23 +2,18 @@
 /**
  * Шаблон подвала (footer.php)
  */
+	$theme_options = get_option('option_name');
 ?>
 	<footer>
 		<div class="container">
 			<div class="copy">
-				&copy; Гостевой дом "Оксана", 2010 - 2017
+				&copy; <?php echo $theme_options['kdv_copy_footer']; ?> - <?php echo date('Y'); ?>
 				<div></div>
-				Краснодарский край, Туапсинский район, пос. Небуг, ул. Набережная, д. 7-Г
+				<?php echo $theme_options['kdv_adress_header']; ?> 
 			</div>
 			<div class="phones">
-				+7 (918) 088-00-05
+				<?php echo $theme_options['kdv_phone_header']; ?>
 				<div class="made">
-					<a href="http://effect-16.ru/" target='_blank' title='Cоздание и продвижение сайтов'>
-						<img src="img/made.png">
-						Создание и<br/>
-						продвижение сайтов
-					</a>
-				</div>
 			</div>
 			<div class="clear"></div>
 		</div>
