@@ -9,7 +9,7 @@
 			<div class="copy">
 				&copy; <?php echo $theme_options['kdv_copy_footer']; ?> - <?php echo date('Y'); ?>
 				<div></div>
-				<?php echo $theme_options['kdv_adress_header']; ?>
+				<?php echo $theme_options['kdv_adress_header']; ?> 
 			</div>
 			<div class="phones">
 				<?php echo $theme_options['kdv_phone_header']; ?>
