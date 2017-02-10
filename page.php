@@ -59,7 +59,7 @@ get_header(); // подключаем header.php ?>
 		<img src="assets/cache/images/karousel/193x128-g5.d97.jpg">
 	</a>
 </div>
-			</div>
+			</div> 
 		</div>
 	</div>
 </div>
