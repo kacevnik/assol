@@ -98,7 +98,7 @@
 		text-align: center;
 		font-weight: normal;
 		font-size: 24px;
-		background: url('img/h1.png') no-repeat center;
+		background: url('../img/h1.png') no-repeat center;
 		text-transform: uppercase;
 		margin-bottom: 10px;
 	}
@@ -298,6 +298,10 @@
 		header .right .mail a {
 			color: #2856AB;
 			font-size: 14px;
+			text-decoration: underline;
+		}
+		header .right .mail a:hover {
+			text-decoration: none;
 		}
 		header .main-logo {
 			padding-top: 45px;
