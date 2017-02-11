@@ -42,6 +42,32 @@ function kdv_footer_info(){
 }
 add_action('wp_footer', 'kdv_footer_info');
 
+add_action( 'admin_print_footer_scripts', 'add_kdv_button_api_yandex_map' );
+function add_kdv_button_api_yandex_map() {
+   if (wp_script_is('quicktags')) :
+?>
+    <script type="text/javascript">
+      if (QTags) {  
+        // QTags.addButton( id, display, arg1, arg2, access_key, title, priority, instance );
+        QTags.addButton( 'kdv_but_yandex_map', 'Добавить карту', '[y_map]', '', 'p', 'Добавить карту', 1 );
+      }
+    </script>
+<?php endif;
+}
+
+add_filter( 'the_content', 'kdv_get_yandex_map' );
+
+function kdv_get_yandex_map($content){
+	global $theme_options;
+	if(strpos($content, '[y_map]')){
+		$text = '<div style="margin: 25px 0 40px;">'.$theme_options['kdv_api_yandex_map'].'</div>';
+		return str_replace('[y_map]', $text, $content);
+	}
+	else{
+		return $content;
+	}
+}
+
 if (!class_exists('clean_comments_constructor')) { // если класс уже есть в дочерней теме - нам не надо его определять
 	class clean_comments_constructor extends Walker_Comment { // класс, который собирает всю структуру комментов
 		public function start_lvl( &$output, $depth = 0, $args = array()) { // что выводим перед дочерними комментариями
