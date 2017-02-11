@@ -20,4 +20,13 @@ $( document ).ready(function() {
 		padding : 10
 	});
 
+	$('.show_commit').click(function(){
+		if($(this).hasClass('active')){
+			$(this).removeClass('active').text('Подробнее').parent().prev().animate({height: "38px"}, 600);
+		}else{
+			$(this).addClass('active').text('Свернуть').parent().prev().animate({height: $(this).parent().prev().find('p').height()}, 600);
+		}
+		return false;
+	});
+
 });

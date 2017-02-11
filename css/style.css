@@ -427,3 +427,25 @@
 		.gallery .bx-controls-direction a.bx-next:hover {
 			background: url('../img/next2.png') bottom;
 		}
+div.review {
+    border: 2px solid #243C68;
+    margin: 0 0 10px 0;
+    padding: 15px 15px 45px 15px;
+    position: relative;
+}
+
+div.review h3 {
+    color: #243C68;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    font-size: 16px;
+}
+div.review>div {
+    height: 38px;
+    overflow: hidden;
+}
+div.review>p>a {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
