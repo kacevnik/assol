@@ -97,7 +97,7 @@
 											wp_nav_menu($args); // выводим верхнее меню
 										?>
 			</nav>
-
+			<?php if( is_front_page() ) { ?>
 			<div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel">
 			<!-- Wrapper for slides -->
 				<div class="carousel-inner">
@@ -129,3 +129,4 @@
 				<span class="glyphicon glyphicon-chevron-right"></span>
 			</a>
 			</div>
+			<?php } ?>

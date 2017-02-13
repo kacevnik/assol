@@ -100,7 +100,7 @@
 		font-size: 24px;
 		background: url('../img/h1.png') no-repeat center;
 		text-transform: uppercase;
-		margin-bottom: 10px;
+		margin: 15px 0 20px;
 	}
 	p {
 		margin: 0 0 10px 0;
@@ -317,7 +317,7 @@
 			padding: 0;
 			margin: 0;
 			list-style: none;
-			margin-left: 155px;
+			margin-left: 153px;
 		}
 		.top-menu ul li {
 			display: inline-block;
@@ -448,4 +448,23 @@ div.review>p>a {
     position: absolute;
     right: 15px;
     bottom: 15px;
+}
+
+.item_ramka{
+	width: 232px;
+    height: 164px;
+    background: url(../img/photo.png);
+    display: inline-block;
+    margin: 0 0 21px 2px;
+    line-height: 164px;
+    text-align: center;
+}
+.item_ramka a{
+	height: 145px;
+    overflow: hidden;
+    display: block;
+    padding: 7px 10px;
+}
+.item_ramka img{
+	width: 193px
 }
