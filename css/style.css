@@ -305,6 +305,7 @@
 		}
 		header .main-logo {
 			padding-top: 45px;
+			padding-left: 375px;
 		}
 
 		.top-menu {
@@ -467,4 +468,19 @@ div.review>p>a {
 }
 .item_ramka img{
 	width: 193px
+}
+
+.form_bron{
+	margin-bottom: 30px;
+}
+
+.form_bron input, .form_bron select{
+	margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 2px;
+    border: 1px solid #929292;
+}
+
+.sub_bron{
+	padding: 5px 10px;
 }

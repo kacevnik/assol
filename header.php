@@ -64,7 +64,6 @@
 				</div>
 				<div class="buttons">
 					<a href="zabronirovat-nomer" target='_blank' class="b1">Забронировать номер</a>
-					<a href="zadat-vopros" target='_blank' class="b2">Задать вопрос</a>
 				</div>
 			</div>
 		<div class="right">
@@ -74,9 +73,11 @@
 			<div class="phone">
 				<?php echo $theme_options['kdv_phone_header']; ?>
 			</div>
+			<?php if($theme_options['kdv_email_header'] != ''){ ?>
 			<div class="mail">
 				<a href="mailto:<?php echo $theme_options['kdv_email_header']; ?>"><?php echo $theme_options['kdv_email_header']; ?></a>
 			</div>
+			<?php } ?>
 		</div>
 		<div class="main-logo">
 			<a href="<?php bloginfo( 'wpurl' ); ?>"><img src="<?php bloginfo( 'template_url' ); ?>/img/main-logo.png"></a>

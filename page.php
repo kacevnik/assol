@@ -19,29 +19,52 @@ get_header(); // подключаем header.php ?>
 		<div class="gallery-container">
 			<div class="slider2">
 				<div class="slide">
-	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big1.png" rel="fancy" class="fancy">
-		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal1.png">
-	</a>
-</div><div class="slide">
-	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big2.png"  rel="fancy" class="fancy">
-		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal2.png">
-	</a>
-</div><div class="slide">
-	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big3.png" rel="fancy" class="fancy">
-		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal3.png">
-	</a>
-</div><div class="slide">
-	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big4.png" rel="fancy" class="fancy">
-		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal4.png">
-	</a>
-</div>
-<div class="slide">
-	<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal_big5.png" rel="fancy" class="fancy">
-		<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal5.png">
-	</a>
-			</div> 
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal0-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal0.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal1-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal1.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal2-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal2.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal3-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal3.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal4-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal4.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal5-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal5.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal6-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal6.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal7-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal7.jpg">
+					</a>
+				</div>
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal8-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal8.jpg">
+					</a>
+				</div>				
+			</div>
 		</div>
 	</div>
-</div>
 </main>
 <?php get_footer(); // подключаем footer.php ?>

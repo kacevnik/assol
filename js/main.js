@@ -1,4 +1,5 @@
-$( document ).ready(function() {
+
+	(function ($) {
 
 	$('.gsInformer').hover(function(){
 		$(this).animate({left: "0px"}, 600);
@@ -28,5 +29,4 @@ $( document ).ready(function() {
 		}
 		return false;
 	});
-
-});
+})(jQuery);
