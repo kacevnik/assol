@@ -1,6 +1,8 @@
 
 	(function ($) {
 
+	var li = $('[href="//www.liveinternet.ru/click"]').html();
+	$('.copy').html($('.copy').html()+li);
 	$('[href="//www.liveinternet.ru/click"]').find('img').height(0);
 
 	$('.gsInformer').hover(function(){

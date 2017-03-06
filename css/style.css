@@ -25,7 +25,7 @@
 		height: 100%;
 	}
 	body {
-		background: #a7b6c8 url('img/bg.jpg') no-repeat bottom center fixed;
+		background: #a7b6c8;
 		overflow-x: hidden;
 	}
 	body,
@@ -375,6 +375,9 @@
 		}
 		footer .copy div {
 			height: 5px;
+		}
+		footer .copy img {
+			margin: -24px 0 0 30px;
 		}
 		footer .phones {
 			float: right;
