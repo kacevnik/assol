@@ -63,6 +63,21 @@ get_header(); // подключаем header.php ?>
 						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal8.jpg">
 					</a>
 				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal9-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal9.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal10-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal10.jpg">
+					</a>
+				</div>				
+				<div class="slide">
+					<a href="<?php bloginfo( 'template_url' ); ?>/galery/gal11-b.jpg" rel="fancy" class="fancy">
+						<img src="<?php bloginfo( 'template_url' ); ?>/galery/gal11.jpg">
+					</a>
+				</div>				
 			</div>
 		</div>
 	</div>

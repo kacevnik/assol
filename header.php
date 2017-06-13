@@ -120,6 +120,11 @@
 					<div class="item">
 						<img src="<?php bloginfo( 'template_url' ); ?>/img/slider4.jpg" alt="">
 					</div>
+
+
+					<div class="item">
+						<img src="<?php bloginfo( 'template_url' ); ?>/img/slider5.jpg" alt="">
+					</div>
 				</div>
 
 			<!-- Controls -->
